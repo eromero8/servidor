@@ -48,8 +48,8 @@ function LED1_Off(){
     console.log("Conectado...");
 	
     client.subscribe("efromero.fie@unach.edu.ec/t2");
-    message = new Paho.MQTT.Message("hola desde la web");
-    message.destinationName = "efromero.fie@unach.edu.ec/t1";
+    message = new Paho.MQTT.Message("");
+    message.destinationName = "efromero.fie@unach.edu.ec/t2";
     client.send(message);
 	
   }
@@ -71,4 +71,3 @@ function LED1_Off(){
     console.log("onMessageArrived:"+message.payloadString);
 	  document.getElementById("sensor").innerHTML=message.payloadString;
   }
-  
