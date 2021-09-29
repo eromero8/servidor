@@ -17,15 +17,7 @@ function historial(){
 	
 
   
-}
-function historial(){  
-  //alert("hostorial");
-  console.log("led off");
-  message = new Paho.MQTT.Message("BOTON2");
-      message.destinationName = "efromero.fie@unach.edu.ec/t1";
-      client.send(message);
-  //document.getElementById("sensor").innerHTML="led off";
-}
+
 
 
 
