@@ -57,7 +57,7 @@ function boton3(){
     console.log("Conectado...");
 	
     client.subscribe("efromero.fie@unach.edu.ec/t2");
-    message = new Paho.MQTT.Message("");
+    message = new Paho.MQTT.Message("---");
     message.destinationName = "efromero.fie@unach.edu.ec/t2";
     client.send(message);
 	
