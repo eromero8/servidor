@@ -2,7 +2,7 @@
 
 function valores() {
   //alert("led on");
-  console.log("led on");
+  console.log("valores");
   //document.getElementById("sensor").innerHTML="led on";
   message = new Paho.MQTT.Message("BOTON1");
       message.destinationName = "efromero.fie@unach.edu.ec/t1";
@@ -10,7 +10,7 @@ function valores() {
   
 }
 function historial(){  
-  //alert("led off");
+  //alert("hostorial");
   console.log("led off");
   message = new Paho.MQTT.Message("BOTON2");
       message.destinationName = "efromero.fie@unach.edu.ec/t1";
