@@ -7,6 +7,21 @@ function valores() {
   message = new Paho.MQTT.Message("BOTON1");
       message.destinationName = "efromero.fie@unach.edu.ec/t1";
       client.send(message);
+	
+function historial(){  
+  //alert("hostorial");
+  console.log("led off");
+  message = new Paho.MQTT.Message("BOTON2");
+      message.destinationName = "efromero.fie@unach.edu.ec/t1";
+      client.send(message);
+	
+function boton3() {
+  //alert("led on");
+  console.log("boton3");
+  //document.getElementById("sensor").innerHTML="led on";
+  message = new Paho.MQTT.Message("BOTON3");
+      message.destinationName = "efromero.fie@unach.edu.ec/t1";
+      client.send(message);
   
 }
 function historial(){  
