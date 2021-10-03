@@ -1,6 +1,6 @@
 
 
-function valores() {
+function LED1_On() {
   //alert("led on");
   console.log("valores");
   //document.getElementById("sensor").innerHTML="led on";
@@ -9,7 +9,7 @@ function valores() {
       client.send(message);
 }
 
-function historial(){  
+function LED1_Off(){  
   //alert("hostorial");
   console.log("led off");
   message = new Paho.MQTT.Message("BOTON2");
