@@ -18,10 +18,10 @@ function LED1_Off(){
 }
 
 
-function boton3(){  
+function LED1_his(){  
   //alert("hostorial");
   console.log("led off");
-  message = new Paho.MQTT.Message("BOTON3");
+  message = new Paho.MQTT.Message("HIST");
       message.destinationName = "efromero.fie@unach.edu.ec/t1";
       client.send(message);
 }
@@ -57,7 +57,7 @@ function boton3(){
     console.log("Conectado...");
 	
     client.subscribe("efromero.fie@unach.edu.ec/t2");
-    message = new Paho.MQTT.Message("---");
+    message = new Paho.MQTT.Message("");
     message.destinationName = "efromero.fie@unach.edu.ec/t2";
     client.send(message);
 	
